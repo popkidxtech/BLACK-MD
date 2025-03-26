@@ -101,7 +101,7 @@ const getRandomQuote = () => {
     return quotes[randomIndex];
 };
 
-keith({ nomCom: "bxd", aliases: ["liste", "helplist", "commandlist"], categorie: "SYSTEM" }, async (message, client, config) => {
+keith({ nomCom: "pxd", aliases: ["liste", "helplist", "commandlist"], categorie: "SYSTEM" }, async (message, client, config) => {
     const { ms, respond, prefix, nomAuteurMessage } = config;
     const commands = require(__dirname + "/../keizzah/keith").cm;
     const categorizedCommands = {};
@@ -161,7 +161,7 @@ keith({ nomCom: "bxd", aliases: ["liste", "helplist", "commandlist"], categorie:
         commandsList += "";
     }
 
-    commandsList += readMore + "\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ\n";
+    commandsList += readMore + "\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ\n";
 
     try {
         const senderName = message.sender || message.from;
@@ -169,11 +169,11 @@ keith({ nomCom: "bxd", aliases: ["liste", "helplist", "commandlist"], categorie:
             caption: responseMessage + commandsList,
         contextInfo: {
           externalAdReply: {
-            title: "𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗 𝗕𝗢𝗧" ,
+            title: "𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗 𝗕𝗢𝗧" ,
             body: "𝗧𝗮𝗽 𝗵𝗲𝗿𝗲 𝘁𝗼 𝗳𝗼𝗹𝗹𝗼𝘄 𝗼𝘂𝗿 𝗰𝗵𝗮𝗻𝗻𝗲𝗹",
             mediaType: 1,
-            sourceUrl:"https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F",
-            thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" ,
+            sourceUrl:"https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l",
+            thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg" ,
             renderLargerThumbnail: false,
             showAdAttribution: true,
                 }
