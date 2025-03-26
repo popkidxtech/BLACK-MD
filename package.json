@@ -1,26 +1,26 @@
 
  {
-  "name": "BELTAH-MD",
+  "name": "POPKID-MD",
   "version": "2.0.0",
   "description": "",
-  "main": "beltahke.js",
+  "main": "popkidke.js",
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node beltahke.js", 
-    "beltahh": "pm2 start beltahke.js --attach --max-memory-restart 490M",
-    "beltah": "pm2 start beltahmd.js --attach",
+    "s": "node popkidke.js", 
+    "popkidd": "pm2 start popkidke.js --attach --max-memory-restart 490M",
+    "popkid": "pm2 start popkidmd.js --attach",
     "c": "tsc"
     },
   "keywords": [
     "bot",
     "Baileys",
-    "Beltah-Md",
+    "Popkid-Md",
     "whatsapp",
     "whatsapp-bot",
-    "Beltah"
+    "Popkid"
    ],
-  "author": "Beltahtechinfo",
+  "author": "Popkidtechinfo",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
