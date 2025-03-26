@@ -135,17 +135,17 @@ keith({ nomCom: "menu", aliases: ["liste", "helplist", "commandlist"], categorie
     let responseMessage = `
  ${greeting}, *${nomAuteurMessage || "User"}*
  
-╭━━━━❮  ${settings.BOT}  ❯━━━━╮ 
-┃✰╭──────────────
-┃✰│ *ʙᴏᴛ ᴏᴡɴᴇʀ:* ${settings.OWNER_NAME}
-┃✰│ *ᴘʀᴇғɪx:* *[ ${settings.PREFIXE} ]*
-┃✰│ *ᴛɪᴍᴇ:* ${formattedTime}
-┃✰│ *ᴄᴏᴍᴍᴀɴᴅꜱ:* ${commands.length} 
-┃✰│ *ᴅᴀᴛᴇ:* ${formattedDate}
-┃✰│ *ᴍᴏᴅᴇ:* ${mode}
-┃✰│ *ʀᴀᴍ:* ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-┃✰│ *ᴜᴘᴛɪᴍᴇ:* ${formatUptime(process.uptime())}
-┃✰╰──────────────
+╭━━━━☠︎︎  ${settings.BOT}  ☠︎︎━━━━╮ 
+┃✞︎╭──────────────
+┃✞︎│ *ʙᴏᴛ ᴏᴡɴᴇʀ:* ${settings.OWNER_NAME}
+┃✞︎│ *ᴘʀᴇғɪx:* *[ ${settings.PREFIXE} ]*
+┃✞︎│ *ᴛɪᴍᴇ:* ${formattedTime}
+┃✞︎│ *ᴄᴏᴍᴍᴀɴᴅꜱ:* ${commands.length} 
+┃✞︎│ *ᴅᴀᴛᴇ:* ${formattedDate}
+┃✞︎│ *ᴍᴏᴅᴇ:* ${mode}
+┃✞︎│ *ʀᴀᴍ:* ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+┃✞︎│ *ᴜᴘᴛɪᴍᴇ:* ${formatUptime(process.uptime())}
+┃✞︎╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
 
 > *${randomQuote}*\n`;
@@ -155,15 +155,15 @@ keith({ nomCom: "menu", aliases: ["liste", "helplist", "commandlist"], categorie
     let commandIndex = 1;
 
     for (const category of sortedCategories) {
-        commandsList += `\n*╭━━❮ ${toFancyUppercaseFont(category)} ❯━━╮*`;
+        commandsList += `\n*╭━☠︎︎ ${toFancyUppercaseFont(category)} ☠︎︎━╮*`;
         const sortedCommands = categorizedCommands[category].sort();
         for (const command of sortedCommands) {
-            commandsList += `\n┃✰ ${toFancyLowercaseFont(command)}`;
+            commandsList += `\n┃➪ ${toFancyLowercaseFont(command)}`;
         }
         commandsList += "\n╰━━━━━━━━━━━━━━━┈⊷";
     }
 
-    commandsList += readMore + "\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ\n";
+    commandsList += readMore + "\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ xᴛᴇᴄʜ\n";
 
     try {
         const senderName = message.sender || message.from;
@@ -172,10 +172,10 @@ keith({ nomCom: "menu", aliases: ["liste", "helplist", "commandlist"], categorie
             contextInfo: {
                 mentionedJid: [senderName],
                 externalAdReply: {
-                    title: "𝗕𝗘𝗟𝗧𝗔𝗛 𝗠𝗨𝗟𝗧𝗜 𝗗𝗘𝗩𝗜𝗖𝗘" ,
-                    body: "𝗜𝘁 𝗶𝘀 𝗻𝗼𝘁 𝘆𝗲𝘁 𝘂𝗻𝘁𝗶𝗹 𝗶𝘁 𝗶𝘀 𝗱𝗼𝗻𝗲🗿" ,
-                    thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" ,
-                    sourceUrl:'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' ,
+                    title: "𝗣𝗢𝗣𝗞𝗜𝗗 𝗫𝗧𝗘𝗖𝗛 𝗕𝗢𝗧" ,
+                    body: "𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 𝗳𝗼𝗿 𝗰𝗵𝗼𝗼𝘀𝗶𝗻𝗴 𝗣𝗼𝗽𝗸𝗶𝗱 𝗕𝗼𝘁" ,
+                    thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg" ,
+                    sourceUrl:'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l' ,
                     mediaType: 1,
                     renderLargerThumbnail: true
                 }
@@ -237,7 +237,7 @@ keith({ nomCom: "list", aliases: ["liste", "helplist", "commandlist"], categorie
 
 `;
 
-    let commandsList = "*𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒*\n";
+    let commandsList = "*𝗣𝗢𝗣𝗞𝗜𝗗 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦*\n";
     const sortedCategories = Object.keys(categorizedCommands).sort();
     let commandIndex = 1;
 
@@ -250,7 +250,7 @@ keith({ nomCom: "list", aliases: ["liste", "helplist", "commandlist"], categorie
         commandsList += "\n│◦╰─────────────\n╰──────────────┈⊷\n";
     }
 
-    commandsList += readMore + "\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ\n";
+    commandsList += readMore + "\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ\n";
 
     try {
         const senderName = message.sender || message.from;
@@ -259,10 +259,10 @@ keith({ nomCom: "list", aliases: ["liste", "helplist", "commandlist"], categorie
             contextInfo: {
                 mentionedJid: [senderName],
                 externalAdReply: {
-                    title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃" ,
-                    body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ" ,
-                    thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" ,
-                    sourceUrl:'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' ,
+                    title: "𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃" ,
+                    body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ" ,
+                    thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg" ,
+                    sourceUrl:'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l' ,
                     mediaType: 1,
                     renderLargerThumbnail: true
                 }
