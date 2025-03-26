@@ -6,8 +6,8 @@ module.exports = {
       forwardingScore: 999,
       isForwarded: true, 
       forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363249464136503@newsletter', 
-        newsletterName: 'BELTAH TECH UPDATES', 
+        newsletterJid: '120363290715861418@newsletter', 
+        newsletterName: 'POPKID TECH UPDATES', 
         serverMessageId: 143 
       }
     };
