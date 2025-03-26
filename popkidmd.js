@@ -5,10 +5,10 @@ const pino = require("pino");
 const fs = require("fs-extra");
 const path = require("path");
 const conf = require("./set");
-const session = conf.session.replace(/BELTAH-MD;;;=>/g, "");
+const session = conf.session.replace(/POPKID-MD;;;=>/g, "");
 require("dotenv").config({ path: "./config.env" });
 
-let auto_reply_message = "Hello, Beltah Tech will respond soon.";
+let auto_reply_message = "Hello, Popkid Tech will respond soon.";
 
 async function authentification() {
   try {
@@ -36,7 +36,7 @@ setTimeout(() => {
     const sockOptions = {
       version,
       logger: pino({ level: "silent" }),
-      browser: ['BELTAH-MD', "safari", "1.0.0"],
+      browser: ['POPKID-MD', "safari", "1.0.0"],
       printQRInTerminal: true,
       fireInitQueries: false,
       shouldSyncHistoryMessage: true,
@@ -70,7 +70,7 @@ setTimeout(() => {
         const callerId = callData[0].from;
         await zk.rejectCall(callId, callerId);
         await zk.sendMessage(callerId, {
-          text: "I AM BELTAH-MD | I REJECT THIS CALL BECAUSE MY OWNER IS BUSY. KINDLY SEND TEXT INSTEAD."
+          text: "I AM POPKID-MD | I REJECT THIS CALL BECAUSE MY OWNER IS BUSY. KINDLY SEND TEXT INSTEAD."
         });
       }
     });
@@ -98,7 +98,7 @@ setTimeout(() => {
           const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
           let notification = `*『👻 ᴀɴᴛɪᴅᴇʟᴇᴛᴇ ᴅᴇᴛᴇᴄᴛᴇᴅ 👻』*\n\n`;
   notification += `*ᴅᴇʟᴇᴛɪᴏɴ ᴛɪᴍᴇ :* ${new Date().toLocaleString()}\n`;
-  notification += `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ :* @${deletedBy.split('@')[0]}\n\n> ᴍᴇssᴀɢᴇ ʀᴇᴛʀɪᴇᴠᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ-ᴍᴅ`;
+  notification += `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ :* @${deletedBy.split('@')[0]}\n\n> ᴍᴇssᴀɢᴇ ʀᴇᴛʀɪᴇᴠᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ-ᴍᴅ`;
   return notification;
         }
         
@@ -191,7 +191,7 @@ setTimeout(() => {
           await zk.sendMessage(message.key.remoteJid, {
             react: {
               key: message.key,
-              text: "👻", // Reaction emoji
+              text: "🩷", // Reaction emoji
             },
           });
 
