@@ -41,7 +41,7 @@ const handleAiCommand = async (dest, zk, params, url, usageExample) => {
           title: conf.BOT,
           body: "Keep learning",
           thumbnailUrl: conf.URL,
-          sourceUrl: "https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47",
+          sourceUrl: "https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l",
           mediaType: 1,
           showAdAttribution: true,
         },
@@ -64,18 +64,18 @@ keith({
 });
 
 keith({
-  nomCom: "beltahmd",
-  aliases: ["beltamd", "beltahbot"],
+  nomCom: "popkidmd",
+  aliases: ["popkidmd", "popkidbot"],
   reaction: '⚔️',
   categorie: "AI"
 }, async (dest, zk, params) => {
-  handleAiCommand(dest, zk, params, "https://bk9.fun/ai/BK93?BK9=you%20are%20zoro%20from%20one%20piece&q=", "Hello there, This is BELTAH-MD BOT, How may I help you with?");
+  handleAiCommand(dest, zk, params, "https://bk9.fun/ai/BK93?BK9=you%20are%20zoro%20from%20one%20piece&q=", "Hello there, This is POPKID-MD BOT, How may I help you with?");
 });
 
 keith({
   nomCom: "gpt",
   aliases: ["ilamaa", "ilamaai"],
-  reaction: '👻',
+  reaction: '❤️',
   categorie: "AI"
 }, async (dest, zk, params) => {
   handleAiCommand(dest, zk, params, "https://bk9.fun/ai/llama?q=", "Example usage: gpt Hi, how are you?");
@@ -84,7 +84,7 @@ keith({
 keith({
   nomCom: "gemini",
   aliases: ["gemini4", "geminiai"],
-  reaction: '👻',
+  reaction: '🤍',
   categorie: "AI"
 }, async (dest, zk, params) => {
   handleAiCommand(dest, zk, params, "https://bk9.fun/ai/gemini?q=", "Example usage: gemini Hi, how are you?");
@@ -118,9 +118,9 @@ keith({
       contextInfo: {
         externalAdReply: {
           title: conf.BOT,
-          body: "keep learning wit BELTAH-MD",
+          body: "keep learning wit POPKID-MD",
           thumbnailUrl: conf.URL,
-          sourceUrl: "https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F",
+          sourceUrl: "https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l",
           mediaType: 1,
           showAdAttribution: true,
         },
