@@ -45,8 +45,8 @@ keith({
 });
 
 keith({
-  nomCom: "beltah",
-  aliases: ["bel", "belta"],
+  nomCom: "popkid",
+  aliases: ["pop", "popkidd"],
   categorie: "General",
   reaction: "🇰🇪"
 }, async (dest, zk, commandeOptions) => {
@@ -54,13 +54,13 @@ keith({
 
   // Define developer contacts with names
   const devContacts = [
-    { name: 'Beltah Tech 254', number: '254114141192' },
-    { name: 'Audi Beltah', number: '254738625827'},
+    { name: 'Popkid', number: '254111385747' },
+    { name: 'POP BMW', number: '254732297194'},
   ];
 
   // Inform about the developer contacts
   await zk.sendMessage(dest, {
-    text: "I am *BELTAH-MD*, A multidevice user bot created by Beltah Tech. Reach out my developer from the contacts below.",
+    text: "I am *POPKID-MD*, A multidevice user bot created by popkid Tech. Reach out my developer from the contacts below.",
   }, { quoted: ms });
 
   // Prepare VCards for developer contacts
@@ -76,7 +76,7 @@ keith({
   // Send message with VCard contacts
   zk.sendMessage(dest, {
     contacts: {
-      displayName: 'BELTAH-MD DEVELOPERS',
+      displayName: 'POPKID-MD DEVELOPERS',
       contacts: vcards.map(vcard => ({ vcard })),
     },
   }, { quoted: ms });
@@ -92,8 +92,8 @@ keith({
 
   // Define developer contacts with names
   const devContacts = [
-    { name: 'Beltah Tech 254', number: '254114141192' },
-    { name: 'Audi Beltah', number: '254738625827' },
+    { name: 'Popkid 254', number: '254111385747' },
+    { name: 'pop', number: '254732297194' },
   ];
 
   // Inform about the developer contacts
@@ -114,7 +114,7 @@ keith({
   // Send message with VCard contacts
   zk.sendMessage(dest, {
     contacts: {
-      displayName: 'BELTAH-MD DEVELOPERS',
+      displayName: 'POPKID-MD DEVELOPERS',
       contacts: vcards.map(vcard => ({ vcard })),
     },
   }, { quoted: ms });
