@@ -70,10 +70,10 @@ keith({ nomCom: "logo", categorie: "Search", reaction: "✋" }, async (dest, zk,
     const contextInfo = {
       mentionedJid: [ms.sender], // Mention the sender
       externalAdReply: {
-        title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃",
-        body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ",
+        title: "𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃",
+        body: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ",
         thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-        sourceUrl: "https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F",
+        sourceUrl: "https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l",
         mediaType: 1,
         renderLargerThumbnail: true,
       },
@@ -258,7 +258,7 @@ keith({ nomCom: "logo", categorie: "Search", reaction: "✋" }, async (dest, zk,
         if (logoUrl) {
           await zk.sendMessage(dest, {
             image: { url: logoUrl },
-            caption: `*Downloaded by 𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃*`,
+            caption: `*Downloaded by 𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃*`,
           }, { quoted: ms });
         }
       }
