@@ -31,12 +31,12 @@ keith({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `
-╭━━━〔  𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃  〕━━━┈⊷ 
-┊✣╭──────────────
-┊✣┊👥 Group : ${nomGroupe} 🚀 
-┊✣┊👤 Author : *${nomAuteurMessage}* 👋 
-┊✣┊📜 Message : *${mess}* 📝
-┊✣╰──────────────
+╭━━━〔  𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃  〕━━━┈⊷ 
+┊✞︎╭──────────────
+┊✞︎┊👥 Group : ${nomGroupe} 🚀 
+┊✞︎┊👤 Author : *${nomAuteurMessage}* 👋 
+┊✞︎┊📜 Message : *${mess}* 📝
+┊✞︎╰──────────────
 ╰═════════════════⊷
 ` ;
 
@@ -69,7 +69,7 @@ keith({ nomCom: "invite", categorie: 'Group', reaction: "🙋" }, async (dest, z
   var link = await zk.groupInviteCode(dest)
   var lien = `https://chat.whatsapp.com/${link}`;
 
-  let mess = `𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃\n\nHello ${nomAuteurMessage} , here is the group link of ${nomGroupe} \n
+  let mess = `𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃\n\nHello ${nomAuteurMessage} , here is the group link of ${nomGroupe} \n
 
 Click Here To Join :${lien}`
   repondre(mess)
@@ -380,7 +380,7 @@ keith({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
     let mess = {
       image: { url: ppgroup },
-      caption:  `*━━━━『GROUP INFO』━━━━*\n\n*🎐Name:* ${info.subject}\n\n*🔩Group's ID:* ${dest}\n\n*🔍Desc:* \n\n${info.desc}\n\n> 𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃`
+      caption:  `*━━━━『GROUP INFO』━━━━*\n\n*🎐Name:* ${info.subject}\n\n*🔩Group's ID:* ${dest}\n\n*🔍Desc:* \n\n${info.desc}\n\n> 𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃`
     }
 
 
@@ -405,7 +405,7 @@ keith({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
   if( superUser || verifAdmin) {
     const enetatoui = await verifierEtatJid(dest)
     try {
-      if (!arg || !arg[0] || arg === ' ') { repondre("𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃\n\nantilink on to activate the anti-link feature\nantilink off to deactivate the anti-link feature\nantilink action/remove to directly remove the link without notice\nantilink action/warn to give warnings\nantilink action/delete to remove the link without any sanctions\n\nPlease note that by default, the anti-link feature is set to delete.") ; return};
+      if (!arg || !arg[0] || arg === ' ') { repondre("𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃\n\nantilink on to activate the anti-link feature\nantilink off to deactivate the anti-link feature\nantilink action/remove to directly remove the link without notice\nantilink action/warn to give warnings\nantilink action/delete to remove the link without any sanctions\n\nPlease note that by default, the anti-link feature is set to delete.") ; return};
      
       if(arg[0] === 'on') {
 
@@ -442,7 +442,7 @@ keith({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
               }
             
 
-            } else repondre("𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃\n\nantilink on to activate the anti-link feature\nantilink off to deactivate the anti-link feature\nantilink action/remove to directly remove the link without notice\nantilink action/warn to give warnings\nantilink action/delete to remove the link without any sanctions\n\nPlease note that by default, the anti-link feature is set to delete.")
+            } else repondre("𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃\n\nantilink on to activate the anti-link feature\nantilink off to deactivate the anti-link feature\nantilink action/remove to directly remove the link without notice\nantilink action/warn to give warnings\nantilink action/delete to remove the link without any sanctions\n\nPlease note that by default, the anti-link feature is set to delete.")
 
       
     } catch (error) {
@@ -473,7 +473,7 @@ keith({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
   if( superUser || verifAdmin) {
     const enetatoui = await atbverifierEtatJid(dest)
     try {
-      if (!arg || !arg[0] || arg === ' ') { repondre('𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃\n\nantibot on to activate the anti-bot feature\nantibot off to deactivate the antibot feature\nantibot action/remove to directly remove the bot without notice\nantibot action/warn to give warnings\nantilink action/delete to remove the bot message without any sanctions\n\nPlease note that by default, the anti-bot feature is set to delete.') ; return};
+      if (!arg || !arg[0] || arg === ' ') { repondre('𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃\n\nantibot on to activate the anti-bot feature\nantibot off to deactivate the antibot feature\nantibot action/remove to directly remove the bot without notice\nantibot action/warn to give warnings\nantilink action/delete to remove the bot message without any sanctions\n\nPlease note that by default, the anti-bot feature is set to delete.') ; return};
      
       if(arg[0] === 'on') {
 
@@ -510,7 +510,7 @@ keith({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
             
 
             } else {  
-              repondre('𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃\n\nantibot on to activate the anti-bot feature\nantibot off to deactivate the antibot feature\nantibot action/remove to directly remove the bot without notice\nantibot action/warn to give warnings\nantilink action/delete to remove the bot message without any sanctions\n\nPlease note that by default, the anti-bot feature is set to delete.') ;
+              repondre('𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃\n\nantibot on to activate the anti-bot feature\nantibot off to deactivate the antibot feature\nantibot action/remove to directly remove the bot without notice\nantibot action/warn to give warnings\nantilink action/delete to remove the bot message without any sanctions\n\nPlease note that by default, the anti-bot feature is set to delete.') ;
 
                             }
     } catch (error) {
@@ -697,7 +697,7 @@ keith({nomCom:"tag",categorie:'Group',reaction:"🎤"},async(dest,zk,commandeOpt
         let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
 
         let stickerMess = new Sticker(media, {
-          pack: 'BELTAH-MD-tag',
+          pack: 'POPKID-MD-tag',
           type: StickerTypes.CROPPED,
           categories: ["🤩", "🎉"],
           id: "12345",
