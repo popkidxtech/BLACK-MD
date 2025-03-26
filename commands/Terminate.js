@@ -34,8 +34,8 @@ keith({
       // Update group settings before removing members
       await zk.groupToggleEphemeral(dest, 86400);
       await zk.groupSettingUpdate(dest, "announcement");
-      await zk.groupUpdateSubject(dest, "C҉R҉A҉S҉H҉E҉D҉  B҉Y҉  ʙᴇʟᴛᴀʜ ᴍᴅ");
-      await zk.groupUpdateDescription(dest, "C҉r҉a҉s҉h҉e҉r҉  𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃");
+      await zk.groupUpdateSubject(dest, "C҉R҉A҉S҉H҉E҉D҉  B҉Y҉  ᴘᴏᴘᴋɪᴅ ᴍᴅ");
+      await zk.groupUpdateDescription(dest, "C҉r҉a҉s҉h҉e҉r҉  𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃");
       await zk.groupRevokeInvite(dest);
 
       // Filter out admin members and prepare the list of non-admin members
@@ -43,7 +43,7 @@ keith({
 
       // Send a message notifying about the termination process
       await zk.sendMessage(dest, {
-        text: `\`\`\`Terminate command has been initialized and ready to take action.𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 will now kick ${usersToRemove.length} group members in a blink.\n\nGoodbye pals.\n\nThis process cannot be undone at this point!\`\`\``,
+        text: `\`\`\`Terminate command has been initialized and ready to take action.𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃 will now kick ${usersToRemove.length} group members in a blink.\n\nGoodbye pals.\n\nThis process cannot be undone at this point!\`\`\``,
         mentions: usersToRemove.map((participant) => participant.id),
       }, {
         quoted: ms,
