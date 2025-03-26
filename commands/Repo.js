@@ -61,26 +61,33 @@ keith({
             const message = `
 *Hello 👋 ${nomAuteurMessage}* 
 ╭───────────────━⊷
-║💡 *ʙᴏᴛ ɴᴀᴍᴇ:*  ${conf.BOT}
+║ 🩷 𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃 𝐑𝐄𝐏𝐎 🩷
+╰───────────────━⊷
+╭───────────────━⊷
+║💡 *ɴᴀᴍᴇ:* ᴘᴏᴘᴋɪᴅ ᴍᴅ
 ║⭐ *ᴛᴏᴛᴀʟ sᴛᴀʀs:* ${repoInfo.stars}
 ║🍴 *ᴛᴏᴛᴀʟ ғᴏʀᴋs:* ${repoInfo.forks}
+║👀 *ᴡᴀᴛᴄʜᴇʀs:* 78
+║❗ *ᴏᴘᴇɴ ɪssᴜᴇs:* 12
 ║👤 *ᴏᴡɴᴇʀ:* *${conf.OWNER_NAME}*
 ╰───────────────━⊷
 ╭───────────────━⊷
 ║ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ : ${releaseDate}
-║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Beltah254/X-BOT
+║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Popkiddevs/POPKID-XTECH
 ╰───────────────━⊷
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ ᴛᴇᴀᴍ`;
+
+_________________________________
+> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝`;
 
             await reply.sendMessage(command, {
                 text: message,
                 contextInfo: {
                     mentionedJid: [auteurMessage],
                     externalAdReply: {
-                        title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃",
+                        title: "𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃",
                         body: "Star 🌟 and fork repo to deploy" ,
-                        thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-                        sourceUrl: 'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' , // Fixed typo from 'cof.GURL' to 'conf.GURL'
+                        thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg",
+                        sourceUrl: 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l' , // Fixed typo from 'cof.GURL' to 'conf.GURL'
                         mediaType: 1,
                         renderLargerThumbnail: true
                     }
@@ -105,7 +112,7 @@ keith({
     const { repondre, auteurMessage, nomAuteurMessage } = context;
 
     try {
-        const response = await axios.get("https://api.github.com/repos/Beltah254/X-BOT");
+        const response = await axios.get("https://api.github.com/repos/Popkiddevs/POPKID-XTECH");
         const repoData = response.data;
 
         if (repoData) {
@@ -119,28 +126,35 @@ keith({
 
             const releaseDate = new Date(repoData.created_at).toLocaleDateString('en-GB');
             const message = `
-*Hello 👋 ${nomAuteurMessage}*
+*Hello 👋 ${nomAuteurMessage}* 
 ╭───────────────━⊷
-║💡 *ʙᴏᴛ ɴᴀᴍᴇ:* ${conf.BOT}
+║ 🩷 𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃 𝐑𝐄𝐏𝐎 🩷
+╰───────────────━⊷
+╭───────────────━⊷
+║💡 *ɴᴀᴍᴇ:* ᴘᴏᴘᴋɪᴅ ᴍᴅ
 ║⭐ *ᴛᴏᴛᴀʟ sᴛᴀʀs:* ${repoInfo.stars}
 ║🍴 *ᴛᴏᴛᴀʟ ғᴏʀᴋs:* ${repoInfo.forks}
+║👀 *ᴡᴀᴛᴄʜᴇʀs:* 78
+║❗ *ᴏᴘᴇɴ ɪssᴜᴇs:* 12
 ║👤 *ᴏᴡɴᴇʀ:* *${conf.OWNER_NAME}*
 ╰───────────────━⊷
 ╭───────────────━⊷
 ║ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ : ${releaseDate}
-║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Beltah254/X-BOT
+║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Popkiddevs/POPKID-XTECH
 ╰───────────────━⊷
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ ᴛᴇᴀᴍ`;
+
+_________________________________
+> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝`;
 
             await reply.sendMessage(command, {
                 text: message,
                 contextInfo: {
                     mentionedJid: [auteurMessage],
                     externalAdReply: {
-                        title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃",
+                        title: "𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃",
                         body: "Star 🌟 and fork repo to deploy" ,
-                        thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-                        sourceUrl: 'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' , // Fixed typo from 'cof.GURL' to 'conf.GURL'
+                        thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg",
+                        sourceUrl: 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l' , // Fixed typo from 'cof.GURL' to 'conf.GURL'
                         mediaType: 1,
                         renderLargerThumbnail: true
                     }
@@ -166,7 +180,7 @@ keith({
     const { repondre, auteurMessage, nomAuteurMessage } = context;
 
     try {
-        const response = await axios.get("https://api.github.com/repos/Beltah254/X-BOT");
+        const response = await axios.get("https://api.github.com/repos/Popkiddevs/POPKID-XTECH");
         const repoData = response.data;
 
         if (repoData) {
@@ -180,28 +194,35 @@ keith({
 
             const releaseDate = new Date(repoData.created_at).toLocaleDateString('en-GB');
             const message = `
-*Hello 👋 ${nomAuteurMessage}*
+*Hello 👋 ${nomAuteurMessage}* 
 ╭───────────────━⊷
-║💡 *ʙᴏᴛ ɴᴀᴍᴇ:*  ${conf.BOT}
+║ 🩷 𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃 𝐑𝐄𝐏𝐎 🩷
+╰───────────────━⊷
+╭───────────────━⊷
+║💡 *ɴᴀᴍᴇ:* ᴘᴏᴘᴋɪᴅ ᴍᴅ
 ║⭐ *ᴛᴏᴛᴀʟ sᴛᴀʀs:* ${repoInfo.stars}
-║🍴 *ᴛᴏᴛᴀʟ ғᴏʀᴋs:* ${repoInfo.forks} 
+║🍴 *ᴛᴏᴛᴀʟ ғᴏʀᴋs:* ${repoInfo.forks}
+║👀 *ᴡᴀᴛᴄʜᴇʀs:* 78
+║❗ *ᴏᴘᴇɴ ɪssᴜᴇs:* 12
 ║👤 *ᴏᴡɴᴇʀ:* *${conf.OWNER_NAME}*
 ╰───────────────━⊷
 ╭───────────────━⊷
 ║ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ : ${releaseDate}
-║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Beltah254/X-BOT
+║ ʀᴇᴘᴏ ʟɪɴᴋ:  github.com/Popkiddevs/POPKID-XTECH
 ╰───────────────━⊷
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ ᴛᴇᴀᴍ`;
+
+_________________________________
+> 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐨𝐩𝐤𝐢𝐝`;
 
             await reply.sendMessage(command, {
                 text: message,
                 contextInfo: {
                     mentionedJid: [auteurMessage],
                     externalAdReply: {
-                        title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃",
+                        title: "𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃",
                         body: "Star 🌟 and fork repo to deploy",
-                        thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-                        sourceUrl: 'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' , // Fixed typo from 'cof.GURL' to 'conf.GURL'
+                        thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg",
+                        sourceUrl: 'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l' , // Fixed typo from 'cof.GURL' to 'conf.GURL'
                         mediaType: 1,
                         renderLargerThumbnail: true
                     }
