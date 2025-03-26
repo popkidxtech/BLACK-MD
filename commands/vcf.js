@@ -59,15 +59,15 @@ keith({
       document: fs.readFileSync(cont),
       mimetype: 'text/vcard',
       fileName: `${metadat.subject}.Vcf`,
-      caption: `𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃\n\nᴛᴏᴛᴀʟ ᴄᴏɴᴛᴀᴄᴛs : ${partic.length} \n\nᴠᴄғ ғᴏʀ : ${metadat.subject}\n\n> *ᴋᴇᴇᴘ ᴜsɪɴɢ ʙᴇʟᴛᴀʜ-ᴍᴅ*`, 
+      caption: `𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃\n\nᴛᴏᴛᴀʟ ᴄᴏɴᴛᴀᴄᴛs : ${partic.length} \n\nᴠᴄғ ғᴏʀ : ${metadat.subject}\n\n> *ᴋᴇᴇᴘ ᴜsɪɴɢ ᴘᴏᴘᴋɪᴅ-ᴍᴅ*`, 
       contextInfo: {
         externalAdReply: {
-          mediaUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" ,
+          mediaUrl: "https://files.catbox.moe/nk71o3.jpg" ,
           mediaType: 1,
-          thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-          title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃",
+          thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg",
+          title: "𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃",
           body: "ʏᴏᴜ ᴄᴀɴ ɴᴏᴡ ɪᴍᴘᴏʀᴛ ᴛᴏ ʏᴏᴜʀ ᴅᴇᴠɪᴄᴇ",
-          sourceUrl:  'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' , // Using configured source URL
+          sourceUrl:  'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l' , // Using configured source URL
           showAdAttribution: true
         }
       }
