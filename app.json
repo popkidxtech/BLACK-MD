@@ -1,14 +1,14 @@
 {
-  "name": "𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗 𝗕𝗢𝗧",
-  "description": "BELTAH-MD is a multidevice WhatsApp bot built to make your WhatsApp enjoyable...",
+  "name": "𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗 𝗕𝗢𝗧",
+  "description": "POPKID-MD is a multidevice WhatsApp bot built to make your WhatsApp enjoyable...",
   "keywords": [
     "bot",
     "node",
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
-  "repository": "https://github.com/Beltah254/BLACK-MD",
+  "logo": "https://files.catbox.moe/nk71o3.jpg",
+  "repository": "https://github.com/Popkiddevs/POPKID-XTECH",
   "succes_url": "/",
   "stack": "container",
   "env": {
@@ -64,7 +64,7 @@
     },
     "BOT_NAME": {
       "description": "Change this if you don't like my name",
-      "value": "BELTAH-MD",
+      "value": "POPKID-MD",
       "required": true 
     },
     "GROUP_CONTROL": {
@@ -99,7 +99,7 @@
     },
     "URL": {
       "description": "Change this image and input yours",
-      "value": "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
+      "value": "https://files.catbox.moe/nk71o3.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
@@ -108,8 +108,8 @@
       "required": false  
     },
     "NUMERO_OWNER": {
-      "description": "Your phone number (exclude '+' and area code, e.g., '254114141192')",
-      "value": "254114141192",
+      "description": "Your phone number (exclude '+' and area code, e.g., '254732297194')",
+      "value": "254111385747",
       "required": false
     },
     "WARN_COUNT": {
