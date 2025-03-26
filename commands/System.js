@@ -65,9 +65,9 @@ async function loading(dest, zk) {
     "✨", 
     "🔞",
     "🗿", 
-   "*ʙᴇʟᴛᴀʜ-ᴍᴅ sᴘᴇᴇᴅ ᴛᴇsᴛ ᴏʀɪɢɪɴᴀᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ sᴀᴠᴇʀ*"
+   "*ᴘᴏᴘᴋɪᴅ-ᴍᴅ sᴘᴇᴇᴅ ᴛᴇsᴛ ᴏʀɪɢɪɴᴀᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ sᴇʀᴠᴇʀ*"
   ];
-  let { key } = await zk.sendMessage(dest, { text: '*🇰🇪Enjoy...with BELTAH MD.....*' });
+  let { key } = await zk.sendMessage(dest, { text: '*🇰🇪Enjoy...with POPKID MD.....*' });
 
   // Run the loading animation without blocking the main code
   for (let i = 0; i < lod.length; i++) {
@@ -80,7 +80,7 @@ keith({
   nomCom: "test",
   aliases: ["alive", "testing"],
   categorie: "system",
-  reaction: "👻"
+  reaction: "🩷"
 }, async (dest, zk, commandeOptions) => {
   const { ms } = commandeOptions;
 
@@ -118,10 +118,10 @@ keith({
     fileName: 'shizo',
     contextInfo: {
       externalAdReply: {
-        title: '𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗 𝗕𝗢𝗧',
+        title: '𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗 𝗕𝗢𝗧',
         body: "𝗜 𝗔𝗠 𝗔𝗟𝗜𝗩𝗘" ,
-        thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" ,
-        sourceUrl:  'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' , // Corrected variable name
+        thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg" ,
+        sourceUrl:  'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l' , // Corrected variable name
         mediaType: 1,
         renderLargerThumbnail: true,
       },
@@ -147,7 +147,7 @@ keith({
 
   try {
     // Inform the user that the bot is restarting
-    await repondre("> *BELTAH-MD is Restarting from the server...*");
+    await repondre("> *POPKID-MD is Restarting from the server...*");
 
     // Function to create a delay
     const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -173,7 +173,7 @@ keith({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech owner 💀*");
+    return repondre("*This command is restricted to the bot owner or Popkid Tech owner 💀*");
   }
 
   const appname = s.HEROKU_APP_NAME;
@@ -189,7 +189,7 @@ keith({
     // Fetch config vars from Heroku API
     const configVars = await heroku.get(baseURI);
 
-    let str = '*╭───༺𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗  𝗔𝗟𝗟 𝗩𝗔𝗥༻────╮*\n\n';
+    let str = '*╭───༺𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗  𝗔𝗟𝗟 𝗩𝗔𝗥༻────╮*\n\n';
     
     // Loop through the returned config vars and format them
     for (let key in configVars) {
@@ -216,14 +216,14 @@ keith({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech*");
+    return repondre("*This command is restricted to the bot owner or Popkid Tech*");
   }
 
   const appname = s.HEROKU_APP_NAME;
   const herokuapi = s.HEROKU_API_KEY;
 
   if (!arg || arg.length !== 1 || !arg[0].includes('=')) {
-    return repondre('Incorrect Usage:\nProvide the key and value correctly.\nExamples: \n\n> setvar OWNER_NAME=Beltah Tech\n> setvar AUTO_READ_MESSAGES=no');
+    return repondre('Incorrect Usage:\nProvide the key and value correctly.\nExamples: \n\n> setvar OWNER_NAME=Popkid Tech\n> setvar AUTO_READ_MESSAGES=no');
   }
 
   const [key, value] = arg[0].split('=');
@@ -306,17 +306,17 @@ keith(
     const pingResults = Array.from({ length: 1 }, () => Math.floor(Math.random() * 10000 + 1000));
 
     // Create larger font for ping results (using special characters for a bigger look)
-    const formattedResults = pingResults.map(ping => `*📡 ᴘᴏɴɢ 📡*\n\n*${ping}...ᴍɪʟʟɪsᴇᴄᴏɴᴅs*\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ ᴛᴇᴀᴍ*`);
+    const formattedResults = pingResults.map(ping => `*📡 ᴘᴏɴɢ 📡*\n\n*${ping}...ᴍɪʟʟɪsᴇᴄᴏɴᴅs*\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ ᴛᴇᴀᴍ*`);
 
     // Send the ping results with the updated text and format
     await zk.sendMessage(dest, {
       text:`${formattedResults}`, 
       contextInfo: {
         externalAdReply: {
-          title: " *ʙᴇʟᴛᴀʜ-ᴍᴅ sᴘᴇᴇᴅ ᴛᴇsᴛ* " ,
-          body:" 👻ᴏʀɪɢɪɴᴀᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ sᴀᴠᴇʀ👻",
+          title: "ᴘᴏᴘᴋɪᴅ-ᴍᴅ sᴘᴇᴇᴅ ᴛᴇsᴛ" ,
+          body:" 🩷ᴏʀɪɢɪɴᴀᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ sᴇʀᴠᴇʀ🩷",
           thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" , // Replace with your bot profile photo URL
-          sourceUrl:  'https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F' , // Your channel URL
+          sourceUrl:  'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l' , // Your channel URL
           mediaType: 1,
           showAdAttribution: true, // Verified badge
         },
@@ -350,10 +350,10 @@ keith({
 
   // Send uptime information to the user
   await zk.sendMessage(dest, {
-    text: `╭───────────────━⊷\n║ *🛸 ʙᴇʟᴛᴀʜ-ᴍᴅ ʀᴜɴᴛɪᴍᴇ 🛸*\n╰───────────────━⊷\n\n${runtime(botUptime)}\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ ᴛᴇᴀᴍ*`,
+    text: `╭───────────────━⊷\n║ *🛸 ᴘᴏᴘᴋɪᴅ-ᴍᴅ ʀᴜɴᴛɪᴍᴇ 🛸*\n╰───────────────━⊷\n\n${runtime(botUptime)}\n> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ᴛᴇᴄʜ ᴛᴇᴀᴍ*`,
     contextInfo: {
       externalAdReply: {
-        title: " *📡ʙᴇʟᴛᴀʜ-ᴍᴅ ᴜᴘᴛɪᴍᴇ📡* ",
+        title: "📡ᴘᴏᴘᴋɪᴅ-ᴍᴅ ᴜᴘᴛɪᴍᴇ📡",
         body: "ʙᴏᴛ ʀᴜɴɴɪɴɢ 24/7 ɴᴏɴ-sᴛᴏᴘ" , // Format the uptime before sending
         thumbnailUrl: conf.URL, // Replace with your bot profile photo URL
         sourceUrl: conf.GURL, // Your channel URL
@@ -404,7 +404,7 @@ keith({
         `https://api.heroku.com/apps/${herokuAppName}/builds`,
         {
           source_blob: {
-            url: "https://github.com/Beltah254/BLACK-MD/tarball/main",
+            url: "https://github.com/popkidxtech/BLACK-MD/tarball/main",
           },
         },
         {
@@ -416,7 +416,7 @@ keith({
       );
 
       // Notify the user about the update and redeployment
-      await repondre("*Your bot is getting updated, wait 2 minutes for the redeploy to finish!*\n\n *This will install the latest version of ʙᴇʟᴛᴀʜ ʙᴏᴛ.*");
+      await repondre("*Your bot is getting updated, wait 2 minutes for the redeploy to finish!*\n\n *This will install the latest version of 𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗 𝗕𝗢𝗧.*");
       console.log("Build details:", response.data);
     } catch (error) {
       // Handle any errors during the redeployment process
