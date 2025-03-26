@@ -315,7 +315,7 @@ keith(
         externalAdReply: {
           title: "ᴘᴏᴘᴋɪᴅ-ᴍᴅ sᴘᴇᴇᴅ ᴛᴇsᴛ" ,
           body:" 🩷ᴏʀɪɢɪɴᴀᴛᴇᴅ ғʀᴏᴍ ᴛʜᴇ sᴇʀᴠᴇʀ🩷",
-          thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" , // Replace with your bot profile photo URL
+          thumbnailUrl: "https://files.catbox.moe/nk71o3.jpg" , // Replace with your bot profile photo URL
           sourceUrl:  'https://whatsapp.com/channel/0029VadQrNI8KMqo79BiHr3l' , // Your channel URL
           mediaType: 1,
           showAdAttribution: true, // Verified badge
