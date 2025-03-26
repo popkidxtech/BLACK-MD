@@ -39,7 +39,7 @@ keith({
 
       await zk.sendMessage(dest, {
         video: { url: videoUrl },
-        caption: '> 𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 𝗳𝗼𝗿 𝗰𝗵𝗼𝗼𝘀𝗶𝗻𝗴 𝗕𝗲𝗹𝘁𝗮𝗵 𝗠𝗱',
+        caption: '> 𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 𝗳𝗼𝗿 𝗰𝗵𝗼𝗼𝘀𝗶𝗻𝗴 𝗣𝗼𝗽𝗸𝗶𝗱 𝗠𝗱',
         gifPlayback: false
       }, { quoted: ms });
 
@@ -521,7 +521,7 @@ keith({
 
     // Prepare the message caption with video details
     const caption = `
-     *𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗 𝐅𝐁 𝐃𝐋*
+     *𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗 𝐅𝐁 𝐃𝐋*
     |__________________________|
     |       *ᴅᴜʀᴀᴛɪᴏɴ*  
            ${videoData.result.duration}
@@ -587,12 +587,12 @@ keith({
         if (responseText === '1') {
           await zk.sendMessage(dest, {
             video: { url: videoDetails.links.SD },
-            caption: "*𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗*",
+            caption: "*𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗*",
           }, { quoted: messageContent });
         } else if (responseText === '2') {
           await zk.sendMessage(dest, {
             video: { url: videoDetails.links.HD },
-            caption: "*𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗*",
+            caption: "*𝗣𝗢𝗣𝗞𝗜𝗗-𝗠𝗗*",
           }, { quoted: messageContent });
         } else if (responseText === '3') {
           await zk.sendMessage(dest, {
@@ -605,8 +605,8 @@ keith({
               url: videoDetails.links.SD
             },
             mimetype: "audio/mpeg",
-            fileName: "Beltah.mp3",
-            caption: "*BELTAH MD*"
+            fileName: "Popkid.mp3",
+            caption: "*POPKID MD*"
           }, {
             quoted: messageContent
           });
@@ -656,7 +656,7 @@ keith({
     let tiktokData = await downloadTiktok(arg[0]);
 
     const caption = `
-     *𝗕𝗘𝗟𝗧𝗔𝗛-𝗠𝗗 𝐓𝐈𝐊𝐓𝐎𝐊 𝐃𝐋*
+     *𝐏𝐎𝐏𝐊𝐈𝐃-𝗠𝗗 𝐓𝐈𝐊𝐓𝐎𝐊 𝐃𝐋*
     |__________________________|
     |-᳆        *ᴛɪᴛʟᴇ*  
      ${tiktokData.result.title}
@@ -703,12 +703,12 @@ keith({
         if (responseText === '1') {
           await zk.sendMessage(keithdl, {
             video: { url: tiktokLinks.dl_link.download_mp4_1 },
-            caption: "*𝐀𝐋𝐏𝐇𝐀 𝐌𝐃*",
+            caption: "*𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃*",
           }, { quoted: messageContent });
         } else if (responseText === '2') {
           await zk.sendMessage(keithdl, {
             video: { url: tiktokLinks.dl_link.download_mp4_2 },
-            caption: "*𝐀𝐋𝐏𝐇𝐀 𝐌𝐃*",
+            caption: "*𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃*",
           }, { quoted: messageContent });
         } else if (responseText === '3') {
           await zk.sendMessage(keithdl, {
