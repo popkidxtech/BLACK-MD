@@ -23,9 +23,9 @@ keith({
 
   const groups = await client.groupFetchAllParticipating();
   const groupIds = Object.values(groups).map(group => group.id);
-  await repondre("*BELTAH-MD is sending your message to all groups ,,,💀*...");
+  await repondre("POPKID-MD is sending your message to all groups ,,,💀*...");
 
-  const broadcastMessage = `*🌟𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓🌟*\n\n🀄 Message: ${arg.join(" ")}\n\n🗣️ Author: ${nomAuteurMessage}`;
+  const broadcastMessage = `*🌟𝐏𝐎𝐏𝐊𝐈𝐃 𝐌𝐃 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓🌟*\n\n🀄 Message: ${arg.join(" ")}\n\n🗣️ Author: ${nomAuteurMessage}`;
   for (let groupId of groupIds) {
     await client.sendMessage(groupId, {
       image: { url: 'https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg' },
